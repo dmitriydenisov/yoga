@@ -1,3 +1,14 @@
+const openBtn = document.querySelector(".menu__button");
+const closeBtn = document.querySelector(".mobile-menu__btn");
+
+openBtn.addEventListener("click", () => {
+  document.querySelector(".mobile-menu").classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  document.querySelector(".mobile-menu").classList.remove("active");
+});
+
 const tabNavItems = document.querySelectorAll(".btn-block__item");
 const tabContentItems = document.querySelectorAll(".choose-specialist__items");
 
