@@ -121,9 +121,12 @@ a {
 
 .choose-specialist {
   //   background-color: #fff;
+
+  position: relative;
+  //   padding-top: 140px;
 }
 
-.choose-specialist__title {
+.choose-specialist__heading {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
@@ -132,6 +135,185 @@ a {
   margin: 0 auto;
   white-space: pre-line;
   padding: 15px 0;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+}
+.choose-specialist__content {
+  //   padding-top: 37px;
+  height: 1000px;
+  background-image: url("../images/bg/specialist-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding-top: 140px;
+}
+.choose-specialist__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.btn-block {
+  margin: 35px 0;
+  width: calc(100vw - 21px);
+  overflow: hidden;
+}
+.btn-block__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+.btn-block__list::-webkit-scrollbar {
+  width: 0;
+}
+.btn-block__item--active {
+  background: #ffffff;
+  border: 0.3px solid #3550c1;
+  box-shadow: 1px 1px 3px rgba(87, 192, 255, 0.25);
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+.btn-block__item + .btn-block__item {
+  margin-left: 23px;
+}
+.choose-specialist__items {
+  display: none;
+  &--active {
+    display: block;
+  }
+}
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 27px 22px;
+  max-width: 319px;
+  margin: 0 auto;
+  margin-top: 17px;
+}
+.card__img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 113px;
+  height: 113px;
+  margin-bottom: 16px;
+}
+.card__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
+}
+.card__experience {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 8px;
+}
+.card__scills {
+  display: flex;
+  align-items: center;
+  li {
+    text-align: center;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #34a8ee;
+    + li {
+      padding-left: 12px;
+      margin-left: 8px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #34a8ee;
+        left: 0;
+        top: 35%;
+        // transform: translateY(-50px);
+      }
+    }
+  }
+}
+.card__description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+.crad__link {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #b1b1b1;
+}
+.card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 233px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.card__tag {
+  background: #ffffff;
+  box-shadow: 1px 1px 10px rgba(87, 192, 255, 0.25);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 13px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #000000;
+  + .card__tag {
+    // margin-left: 13px;
+  }
+}
+.swiper {
+  max-width: 319px;
+}
+.swiper-button-next::after {
+  background-image: url("../images/arrow-next.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 12px;
+  height: 24px;
+}
+.swiper-button-prev::after {
+  background-image: url("../images/arrow-prev.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 12px;
+  height: 24px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  transform: translateY(50px);
 }
 @media (min-width: 500px) {
   .container {
