@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 97%;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 8px;
+  background: linear-gradient(
+    3600deg,
+    rgba(229, 239, 252, 1) 0%,
+    rgba(231, 240, 253, 1) 46%,
+    rgba(233, 241, 253, 1) 76%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  //   filter: drop-shadow(286px);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  //   padding-right: 24px;
+}
+
+.menu {
+  width: 25px;
+}
+
+.menu__button {
+  position: relative;
+  width: 25px;
+  height: 2px;
+  display: block;
+  cursor: pointer;
+
+  background-color: #000000;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+  }
+  &::after {
+    top: 10px;
+  }
+  &::before {
+    bottom: 10px;
+  }
+}
+
+.header__title {
+  text-align: center;
+  margin-bottom: 53px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 47px;
+
+  color: #7bbfe1;
+}
+
+.header__img {
+  max-width: 100%;
+}

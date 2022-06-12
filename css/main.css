@@ -1,0 +1,120 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 97%;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 8px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e5effc), color-stop(46%, #e7f0fd), color-stop(76%, #e9f1fd), to(white));
+  background: linear-gradient(3600deg, #e5effc 0%, #e7f0fd 46%, #e9f1fd 76%, white 100%);
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.menu {
+  width: 25px;
+}
+
+.menu__button {
+  position: relative;
+  width: 25px;
+  height: 2px;
+  display: block;
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.menu__button::after, .menu__button::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.menu__button::after {
+  top: 10px;
+}
+
+.menu__button::before {
+  bottom: 10px;
+}
+
+.header__title {
+  text-align: center;
+  margin-bottom: 53px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 47px;
+  color: #7bbfe1;
+}
+
+.header__img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
