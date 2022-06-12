@@ -137,4 +137,10 @@ a {
   white-space: pre-line;
   padding: 15px 0;
 }
+
+@media (min-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
