@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
 *,
@@ -51,14 +52,16 @@ a {
 }
 
 .container {
-  max-width: 97%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .header {
   padding-top: 8px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e5effc), color-stop(46%, #e7f0fd), color-stop(76%, #e9f1fd), to(white));
-  background: linear-gradient(3600deg, #e5effc 0%, #e7f0fd 46%, #e9f1fd 76%, white 100%);
+  background-image: url("../images/bg/Group833.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 54px;
 }
 
 .header__nav {
@@ -79,34 +82,41 @@ a {
 }
 
 .menu__button {
+  height: 25px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu__button-icon {
   position: relative;
   width: 25px;
   height: 2px;
   display: block;
-  cursor: pointer;
   background-color: #000000;
 }
 
-.menu__button::after, .menu__button::before {
+.menu__button-icon::after, .menu__button-icon::before {
   position: absolute;
   content: "";
   width: 25px;
   height: 2px;
   background-color: #000000;
+  left: 0;
 }
 
-.menu__button::after {
+.menu__button-icon::after {
   top: 10px;
 }
 
-.menu__button::before {
+.menu__button-icon::before {
   bottom: 10px;
 }
 
 .header__title {
   text-align: center;
   margin-bottom: 53px;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -116,5 +126,15 @@ a {
 
 .header__img {
   max-width: 100%;
+}
+
+.choose-specialist__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 auto;
+  white-space: pre-line;
+  padding: 15px 0;
 }
 /*# sourceMappingURL=main.css.map */
