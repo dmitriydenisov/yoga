@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
 *,
@@ -49,38 +50,39 @@ a {
 }
 
 .container {
-  max-width: 97%;
+  max-width: 90%;
   margin: 0 auto;
 }
 .header {
   padding-top: 8px;
-  background: linear-gradient(
-    3600deg,
-    rgba(229, 239, 252, 1) 0%,
-    rgba(231, 240, 253, 1) 46%,
-    rgba(233, 241, 253, 1) 76%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  //   filter: drop-shadow(286px);
+  background-image: url("../images/bg/Group833.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 54px;
 }
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 18px;
-  //   padding-right: 24px;
 }
 
 .menu {
   width: 25px;
 }
-
 .menu__button {
+  height: 25px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu__button-icon {
   position: relative;
   width: 25px;
   height: 2px;
   display: block;
-  cursor: pointer;
 
   background-color: #000000;
 
@@ -91,6 +93,7 @@ a {
     width: 25px;
     height: 2px;
     background-color: #000000;
+    left: 0;
   }
   &::after {
     top: 10px;
@@ -103,7 +106,7 @@ a {
 .header__title {
   text-align: center;
   margin-bottom: 53px;
-  font-family: "Playfair Display";
+  //   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -114,4 +117,19 @@ a {
 
 .header__img {
   max-width: 100%;
+}
+
+.choose-specialist {
+  //   background-color: #fff;
+}
+
+.choose-specialist__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  //   width: 222px;
+  margin: 0 auto;
+  white-space: pre-line;
+  padding: 15px 0;
 }
